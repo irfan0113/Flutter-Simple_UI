@@ -46,12 +46,22 @@ class _MyHomePageState extends State<MyHomePage> {
                     borderRadius: BorderRadius.all(Radius.circular(75.0)
                     ),
                       boxShadow: [
-                        BoxShadow(blurRadius: 7.0, color: Colors.black)
+                        BoxShadow(blurRadius: 7.0,
+                            color: Colors.black,
+                            spreadRadius: 5.0) //Try changing spread
                       ]
+                  ),
+                ),
+                SizedBox(height: 90.0),
+                Text(
+                  'Flutter',
+                  style: TextStyle(
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'DMSerifDisplay'
                   ),
                 )
               ],
-              
             )
           )
         ],
