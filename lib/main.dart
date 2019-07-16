@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ]
                   ),
                 ),
-                SizedBox(height: 90.0),
+                SizedBox(height: 50.0),
                 Text(
                   'Flutter',
                   style: TextStyle(
@@ -61,14 +61,22 @@ class _MyHomePageState extends State<MyHomePage> {
                       fontFamily: 'DMSerifDisplay'
                   ),
                 ),
+                SizedBox(height: 15.0),
+                Text(
+                  'An app for Android, iOS and Web ',
+                  style: TextStyle(
+                      fontSize: 15.0,
+                      fontFamily: 'DMSerifDisplay'
+                  ),
+                ),
                 SizedBox(height: 25.0),
                 Container(
-                  height: 30.0,
-                  width: 95.0,
+                  height: 50.0,
+                  width: 110.0,
                   child: Material(
                     borderRadius: BorderRadius.circular(20.0),
-                    shadowColor: Colors.greenAccent,
-                    color: Colors.green,
+                    shadowColor: Colors.blueAccent,
+                    color: Colors.blue,
                     elevation: 7.0,
                     child: GestureDetector(
                         onTap: () {},
@@ -76,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Text(
                             'Edit Name',
                             style: TextStyle(color: Colors.white,
-                                fontFamily: 'DMSerifDisplay'),
+                                fontFamily: 'DMSerifDisplay', fontSize: 16),
                           ),
                         )
                     ),
@@ -84,8 +92,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 SizedBox(height: 25.0),
                 Container(
-                  height: 30.0,
-                  width: 95.0,
+                  height: 50.0,
+                  width: 110.0,
                   child: Material(
                     borderRadius: BorderRadius.circular(20.0),
                     shadowColor: Colors.redAccent,
@@ -97,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Text(
                             'Log Out',
                             style: TextStyle(color: Colors.white,
-                                fontFamily: 'DMSerifDisplay'),
+                                fontFamily: 'DMSerifDisplay', fontSize: 16),
                           ),
                         )
                     ),
@@ -117,8 +125,8 @@ class getClipper extends CustomClipper<Path>{
   Path getClip(Size size) {
     var path = new Path();
 
-    path.lineTo(0.0, size.height/1.9);
-    path.lineTo(size.width + 125, 0.0);
+    path.lineTo(0.0, size.height / 2.0);
+    path.lineTo(size.width + 335, 0.0);
     path.close();
     return path;
   }
@@ -128,4 +136,3 @@ class getClipper extends CustomClipper<Path>{
     return true;
   }
 }
-//SAHAL
