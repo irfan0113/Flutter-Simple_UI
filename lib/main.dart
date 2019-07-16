@@ -44,7 +44,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       fit: BoxFit.cover
                     ),
                     borderRadius: BorderRadius.all(Radius.circular(75.0)
-                    )
+                    ),
+                      boxShadow: [
+                        BoxShadow(blurRadius: 7.0, color: Colors.black)
+                      ]
                   ),
                 )
               ],
