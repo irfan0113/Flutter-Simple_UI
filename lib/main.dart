@@ -30,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
             clipper: getClipper(),
           ),
           Positioned(
-            width : 350.0,
+              width: 350.0, //TODO: Make it look better
             top: MediaQuery.of(context).size.height/5,
             child:Column(
               children: <Widget>[
@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: 150.0,
                   height: 150.0,
                   decoration: BoxDecoration(
-                    color: Colors.red,
+                      color: Colors.white,
                     image: DecorationImage(
                       image: NetworkImage('https://miro.medium.com/max/400/1*gH1iKXJH8T12LIqhboZWEA.png'),
                       fit: BoxFit.cover
@@ -59,6 +59,48 @@ class _MyHomePageState extends State<MyHomePage> {
                       fontSize: 30.0,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'DMSerifDisplay'
+                  ),
+                ),
+                SizedBox(height: 25.0),
+                Container(
+                  height: 30.0,
+                  width: 95.0,
+                  child: Material(
+                    borderRadius: BorderRadius.circular(20.0),
+                    shadowColor: Colors.greenAccent,
+                    color: Colors.green,
+                    elevation: 7.0,
+                    child: GestureDetector(
+                        onTap: () {},
+                        child: Center(
+                          child: Text(
+                            'Edit Name',
+                            style: TextStyle(color: Colors.white,
+                                fontFamily: 'DMSerifDisplay'),
+                          ),
+                        )
+                    ),
+                  ),
+                ),
+                SizedBox(height: 25.0),
+                Container(
+                  height: 30.0,
+                  width: 95.0,
+                  child: Material(
+                    borderRadius: BorderRadius.circular(20.0),
+                    shadowColor: Colors.redAccent,
+                    color: Colors.red,
+                    elevation: 7.0,
+                    child: GestureDetector(
+                        onTap: () {},
+                        child: Center(
+                          child: Text(
+                            'Log Out',
+                            style: TextStyle(color: Colors.white,
+                                fontFamily: 'DMSerifDisplay'),
+                          ),
+                        )
+                    ),
                   ),
                 )
               ],
@@ -86,3 +128,4 @@ class getClipper extends CustomClipper<Path>{
     return true;
   }
 }
+//SAHAL
