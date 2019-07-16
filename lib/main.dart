@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: 150.0,
                   height: 150.0,
                   decoration: BoxDecoration(
-                    color: Colors.red,
+                      color: Colors.white,
                     image: DecorationImage(
                       image: NetworkImage('https://miro.medium.com/max/400/1*gH1iKXJH8T12LIqhboZWEA.png'),
                       fit: BoxFit.cover
@@ -128,3 +128,4 @@ class getClipper extends CustomClipper<Path>{
     return true;
   }
 }
+//SAHAL
